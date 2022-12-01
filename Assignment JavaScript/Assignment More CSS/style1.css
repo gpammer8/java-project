@@ -1,0 +1,88 @@
+/* color names
+
+Primary Color:    #9AB87A
+Dark Primary:     #708B75
+Secondary Color:  #444B6E
+Accent Color:     #F8f991
+
+/* start CSS */
+
+header, nav, main, footer {
+  padding: 5px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+}
+header {
+  background-color: #9AB87A;
+  background-image: url('doctor.png');
+  background-position: left; /* Needed to add this to move image beside website title */
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  padding-left: 60px;
+  padding-top: 10px; /* Needed to add this to accomidate for no padding at top */
+  height: 100px;
+}
+h1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #F8f991;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+}
+h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;;
+}
+main {
+  background-color: white;
+}
+footer {
+  background-color: #F8f991;
+  font-size: x-small;
+  text-align: center;
+}
+.imageContainer {
+  text-align: center;
+}
+section {
+  padding-left: 5px;
+  background-image: url("towfiqu-barbhuiya-w8p9cQDLX7I-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-top: 200px;
+  padding-left: 50px;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #708B75;
+}
+nav a {
+  color: #F8f991;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px 0px 3px 5px;
+}
+a:hover {
+  color: #9AB87A;
+  text-decoration: underline;
+}
+ul {
+  list-style-image: url('icons8-arrow-15.png');
+}
+/* aside {
+  width: 25%;
+  float: right;
+  background: linear-gradient(#9AB87A, #F8f991);
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px;
+  grid-template-areas: right;
+} */

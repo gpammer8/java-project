@@ -1,0 +1,58 @@
+footer {
+  grid-area: footer;
+  padding: 5px;
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+  width: 90%;
+  max-width: 1250px;
+  margin: auto auto;
+}
+nav {
+  grid-area: nav;
+}
+section {
+  grid-area: section;
+}
+.layout {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+ display: grid;
+ grid-gap: 0px;
+ grid-template-columns: auto auto auto auto;
+ grid-template-areas:
+   "nav"
+   "header"
+   "main"
+   "section"
+   "footer";
+}
+li {
+  display: inline-block;
+}
+.serviceGrid {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(7, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: auto;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: auto;
+  
+  margin: auto;
+  text-align: center;
+  padding-bottom: auto;
+  padding-left: auto;
+  border-style: solid;
+
+
+
+}

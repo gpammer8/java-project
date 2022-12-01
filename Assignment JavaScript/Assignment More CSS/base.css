@@ -1,0 +1,179 @@
+/* This completely ruined the original padding and margins on the site
+I had to add additional padding to make it look like yours. I'm not
+sure my work arounds are what you wanted. */
+
+article, aside, details, dl, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+p , h1 , h2 , h3, h4 {
+  margin: 0px;
+  padding: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: right;
+  background-position: 100%;
+  padding-right:
+}
+table, th, td {
+border: 2px solid;
+margin: auto;
+padding: auto;
+border-collapse: collapse;
+grid-template: auto;
+border-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color:  #9AB87A;
+  padding: 10px;
+}
+tr:nth-child(odd) {
+  background-color: #000000;
+}
+.grid-item {
+  background-color: #f2f2f2;
+  border: 3px solid #9AB87A;
+  padding: 15px;
+  font-size: 15px;
+  font-family: Verdana; Helvetica, sans-serif;
+  text-align: center;
+}
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color:  #9AB87A;
+  padding: 10px;
+  padding-left: 225px;
+}
+.grid-item2 {
+  background-color: #f2f2f2;
+  border: 3px solid #9AB87A;
+  padding: 15px;
+  font-size: 15px;
+  text-align: center;
+}
+.main-aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color:  #9AB87A;
+  padding: 10px;
+  padding-left: 225px;
+  float: right;
+}
+
+.Table1 {
+float: left;
+padding: auto;
+}
+
+.Table2 {
+float: right;
+padding: auto;
+}
+
+.Table3 {
+  float:left;
+  padding: auto;
+}
+
+.Table4 {
+  float:left;
+  padding: auto;
+}
+.Table5 {
+  float: left;
+  padding: auto;
+}
+#Condition {
+  margin: auto auto ;
+  padding: 10px;
+  border: 2px solid #9AB87A;
+  line-height: 150%;
+  font-family:Times, Palatino, serif;
+  max-width: 750px;
+}
+
+#Condition h4 {
+  padding: 0 0 15px 0;
+    margin: auto;
+    font-style: Bold;
+    font-size: 20px;
+}
+
+.FormPage input, .FormPage select {
+  width:250px;
+
+}
+.FormPage label {
+  width:100px;
+}
+.FormPage {
+  display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+    padding: 5px;
+}
+
+#Condition .FormPage label {
+  color: #708B75;
+    font-weight: bold;
+    font-size: .95em;
+}
+
+#COM {
+  margin: 10px 0 0 0;
+    display: block;
+}
+
+#Condition textarea {
+  display: block;
+    width: 100%;
+    border-color: #708B75;
+}
+
+#Condition fieldset {
+  border: 2px solid #444B6E;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#Condition legend {
+    color: #708B75;
+    padding: 5px;
+    font-weight: bold;
+    font-size: .95em;
+    font-variant: small-caps;
+}
+
+#Condition fieldset label {
+  color: #9AB87A;
+    font-style: Bold;
+    font-size: .85em;
+}
+
+#Condition .SubmitButton {
+text-align: center;
+}
+
+#Condition .SubmitButton input {
+  background-color: #9AB87A;
+    height: 32px;
+    border: 2px outset;
+
+    font-weight: bold;
+    color: Black;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}

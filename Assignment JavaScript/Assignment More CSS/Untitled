@@ -1,0 +1,62 @@
+"use strict";
+
+function setup() {
+
+  // Get all the add to list buttons on the page
+  var button = document.querySelectorAll('.add-to-list');
+
+  // Loop through all the buttons
+  for(var i = 0; i < button.length; i++) {
+
+    // Add an event listener to each button
+    button[i].addEventListener('click', addItem);
+  }
+}
+
+// This function adds items to the wish list
+function addItem(e) {
+
+  // Get the button that was clicked
+  var button = e.target;
+
+  // Get the id of the button that was clicked
+  var id = button.id;
+
+  // Use the id of the button to get the id of the entire item
+  var itemId = 'item1' + 1;
+
+  // Check to see if the item is already in the wish list
+  if(!isInArray('item1')) {
+
+    // Add the item to the global array
+    addToArray(itemId);
+
+    // Get the HTML of the item
+    var itemHTML = document.getElementById(itemId).innerHTML;
+
+    // Add the item's HTML to the end of the wish list
+    document.getElementById('wish-list').innerHTML += itemHTML;
+  }
+}
+
+// This function checks to see if an item is in the array
+function isInArray(item) {
+  for(var i = 0; i < items.length; i++) {
+    if(items[i] == item) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+// This function adds an item to the array
+function addToArray(item) {
+  items.push(item);
+}
+
+// This is our global array that we use to keep track of which items are in the wish list
+var items = [];
+
+// Call the setup function when the page loads
+setup();
